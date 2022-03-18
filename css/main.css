@@ -103,34 +103,82 @@ html {
 }
 
 body {
+
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  padding: 2em;
+  padding: 0em 2em;
   height: 100%;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 1.25em;
+
 
 }
 
-.wrapper {
+.flex-container {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-  align-items: center;
+  max-width: 1200px;
 }
+
+header,
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-family: 'Lora', sans-serif;
+    font-size: 3em;
+}
+
+
+
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   line-height: 1.5em;
-  font-size: 1.2em;
+  font-size: 1.3em;
   height: 300px;
   width: 30%;
   display: flex;
   justify-content: center;  
   align-items: center;
   font-size: 1.25em;
-
 }
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+    
+  }
+  
+  main p {
+    font-size: 1.35em;
+  }
+  
+  .flex-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+    font-size: 1em;
+    border-bottom: 1px solid #555;
+  }
+  
+  footer {
+    border-top: 1px solid #fff;
+  }
+
+
+
+
 
 
 
